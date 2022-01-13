@@ -146,17 +146,22 @@ nav a{
 .fa-clock{
     margin-right: 5px;
 }
+
 @media (max-width:688px){
     .navbar,.container{
-        width: 100%;
+        width:100%;
     }
     .section-title{
         text-align: center;
     }
     .players,.blogs,.courses{
-        grid-template-columns: 1,1fr;
+        grid-template-columns: repeat(1,1fr);
     }
     .player{
         flex-direction: column;
+    }
+    .course{
+        flex-direction: column;
+        position: center;
     }
 }
